@@ -10,6 +10,7 @@
 
 * [Introduction](#Introduction)
 * [Configure git for commits](#Configure-git-for-commits)
+* [Start your project with DEEP Data Science template](#Start-your-project-with-DEEP-Data-Science-template)
 * [DEEP Documentation](#DEEP-Documentation)
 * [DEEP related services](#DEEP-related-services)
 * [List of installed tools](#List-of-installed-tools)
@@ -26,6 +27,14 @@ Using pre-installed `git` you can easily clone projects in DDE. If you want to c
 ```bash
 $ git config --global user.name "Your Name"
 $ git config --global user.email "your_email_for_git_account@domain.zone"
+```
+
+## Start your project with DEEP Data Science template
+
+Create your new project using our [Data Science template](https://github.com/indigo-dc/cookiecutter-data-science) for easier integration with DEEP components ([DEEPaaS API](https://docs.deep-hybrid-datacloud.eu/projects/deepaas/en/latest/), Dockerfile, Jenkinsfiles etc):
+
+```bash
+$ cookiecutter https://github.com/indigo-dc/cookiecutter-data-science
 ```
 
 ## DEEP Documentation
@@ -57,10 +66,6 @@ It leverages
 
 Includes: 
 * [cookiecutter](https://cookiecutter.readthedocs.io/en/latest/) template tool to start or integrate your project with DEEP solutions profiting from [DEEP Data Science template](https://github.com/indigo-dc/cookiecutter-data-science):
-
-    ```bash
-    $ cookiecutter https://github.com/indigo-dc/cookiecutter-data-science
-    ```
 
 Contains DEEP components:
 * [DEEP as a Service API](https://docs.deep-hybrid-datacloud.eu/projects/deepaas/en/latest/) is REST API that provids access to machine learning models;
