@@ -13,7 +13,7 @@ DEEP Development Environment (DDE) aims to facilitate the integration of your co
 * [Introduction](#Introduction)
 * [Configure git for commits](#Configure-git-for-commits)
 * [DEEP Documentation](#DEEP-Documentation)
-* [DEEP Tools](#DEEP-Tools)
+* [DEEP related tools](#DEEP-related-tools)
 * [Acknowledgments](#Acknowledgments)
 
 
@@ -31,8 +31,8 @@ Includes:
 
 Contains DEEP components:
 * [DEEP as a Service API](https://docs.deep-hybrid-datacloud.eu/projects/deepaas/en/latest/) is REST API that provids access to machine learning models
-* [flaat](https://github.com/indigo-dc/flaat)
-* [oidc-agent](https://github.com/indigo-dc/oidc-agent)
+* [flaat](https://github.com/indigo-dc/flaat) : FLAsk support for handling oidc Access Tokens
+* [oidc-agent](https://github.com/indigo-dc/oidc-agent) : a set of tools to manage OpenID Connect tokens and make them easily usable from the command line.
 
 Python related packages:
 * python
@@ -58,9 +58,19 @@ $ git config --global user.email "your_email_for_git_account@domain.zone"
 
 ## DEEP Documentation
 
+Comprehensive documentation on DEEP tools and components can be found in:
 
+* [DEEP-Hybrid-DataCloud documentation](https://docs.deep-hybrid-datacloud.eu/en/latest/)
+    * [Quickstart guide](https://docs.deep-hybrid-datacloud.eu/en/latest/user/quickstart.html)
+    * [Overview](https://docs.deep-hybrid-datacloud.eu/en/latest/user/overview/index.html)
+    * [HowTo's](https://docs.deep-hybrid-datacloud.eu/en/latest/user/howto/index.html)
+* [YouTube channel](https://www.youtube.com/playlist?list=PLJ9x9Zk1O-J_UZfNO2uWp2pFMmbwLvzXa) with tutorials
 
-## DEEP Tools
+## DEEP related tools
+* [DEEP Open Catalog](https://marketplace.deep-hybrid-datacloud.eu/) : a curated repository of applications ready to be used or extended
+* [Training Dashboard](https://train.deep-hybrid-datacloud.eu/): Dashboard that allows users to interact with the modules hosted at the DEEP Open Catalog, as well as deploying external Docker images hosted in Dockerhub.
+* [Nextcloud storage](https://nc.deep-hybrid-datacloud.eu/) : 
+* [OneData distributed solution](https://onezone.cloud.cnaf.infn.it/) : global data access solution for science.
 
 ## Acknowledgements
 
