@@ -6,46 +6,18 @@
 
 **Project:** This work is part of the [DEEP Hybrid-DataCloud](https://deep-hybrid-datacloud.eu/) project that has received funding from the European Union’s Horizon 2020 research and innovation programme under grant agreement No 777435.
 
-DEEP Development Environment (DDE) aims to facilitate the integration of your code with DEEP solutions, development and testing it directly in the cloud environment.
-
 ## Table of Content
 
 * [Introduction](#Introduction)
 * [Configure git for commits](#Configure-git-for-commits)
 * [DEEP Documentation](#DEEP-Documentation)
-* [DEEP related tools](#DEEP-related-tools)
+* [DEEP related services](#DEEP-related-services)
+* [List of installed tools](#List-of-installed-tools)
 * [Acknowledgments](#Acknowledgments)
 
-
 ## Introduction
-DEEP Development Environment uses as a base a Docker Image of either 
-* [TensorFlow](https://tensorflow.org) framework (1.14.0 | 1.15.0 | 2.0.0)
-* [PyTorch](https://pytorch.org/) (1.2 | 1.4)
-* or Ubuntu 18.04
 
-It leverages 
-* [JupyterLab](https://jupyterlab.readthedocs.io/en/stable/index.html) web-based user interface for developing and debugging your code
-
-Includes: 
-* [cookiecutter](https://cookiecutter.readthedocs.io/en/latest/) template tool to start or integrate your project with DEEP solutions profiting from [DEEP Data Science template](https://github.com/indigo-dc/cookiecutter-data-science)
-
-Contains DEEP components:
-* [DEEP as a Service API](https://docs.deep-hybrid-datacloud.eu/projects/deepaas/en/latest/) is REST API that provids access to machine learning models
-* [flaat](https://github.com/indigo-dc/flaat) : FLAsk support for handling oidc Access Tokens
-* [oidc-agent](https://github.com/indigo-dc/oidc-agent) : a set of tools to manage OpenID Connect tokens and make them easily usable from the command line.
-
-Python related packages:
-* python
-* python-dev
-* pip
-
-And a number of tools to facilitate the development:
-* git
-* curl
-* [mc](https://midnight-commander.org/) : Midnight Commander, a visual file manager
-* openssh-client
-* [rclone](https://rclone.org) : a command line program to sync files and directories to and from cloud storages
-* wget
+DEEP Development Environment (DDE) aims to facilitate the integration of your code with DEEP solutions, development and testing it directly in the cloud environment. Please, see the [List of installed tools](#List-of-installed-tools) and [DEEP Documentation](#DEEP-Documentation) for more details.
 
 ## Configure git for commits
 
@@ -66,11 +38,47 @@ Comprehensive documentation on DEEP tools and components can be found in:
     * [HowTo's](https://docs.deep-hybrid-datacloud.eu/en/latest/user/howto/index.html)
 * [YouTube channel](https://www.youtube.com/playlist?list=PLJ9x9Zk1O-J_UZfNO2uWp2pFMmbwLvzXa) with tutorials
 
-## DEEP related tools
+## DEEP related services
+* [DEEP-IAM](https://iam.deep-hybrid-datacloud.eu/login) : DEEP central authentication and authorisation 
 * [DEEP Open Catalog](https://marketplace.deep-hybrid-datacloud.eu/) : a curated repository of applications ready to be used or extended
 * [Training Dashboard](https://train.deep-hybrid-datacloud.eu/): Dashboard that allows users to interact with the modules hosted at the DEEP Open Catalog, as well as deploying external Docker images hosted in Dockerhub.
-* [Nextcloud storage](https://nc.deep-hybrid-datacloud.eu/) : 
+* [DEEP as a Service](https://deepaas.deep-hybrid-datacloud.eu/) :  allows any user to automatically exploit any module from the browser or via the offered API (prediction only).
+* [Nextcloud storage](https://nc.deep-hybrid-datacloud.eu/) :  a sync&share solution to host and share data.
 * [OneData distributed solution](https://onezone.cloud.cnaf.infn.it/) : global data access solution for science.
+
+## List of installed tools
+DEEP Development Environment uses as a base a Docker Image of either 
+* [TensorFlow](https://tensorflow.org) framework (1.14.0 | 1.15.0 | 2.0.0)
+* [PyTorch](https://pytorch.org/) (1.2 | 1.4)
+* or Ubuntu 18.04
+
+It leverages 
+* [JupyterLab](https://jupyterlab.readthedocs.io/en/stable/index.html) web-based user interface for developing and debugging your code;
+
+Includes: 
+* [cookiecutter](https://cookiecutter.readthedocs.io/en/latest/) template tool to start or integrate your project with DEEP solutions profiting from [DEEP Data Science template](https://github.com/indigo-dc/cookiecutter-data-science):
+
+    ```bash
+    $ cookiecutter https://github.com/indigo-dc/cookiecutter-data-science
+    ```
+
+Contains DEEP components:
+* [DEEP as a Service API](https://docs.deep-hybrid-datacloud.eu/projects/deepaas/en/latest/) is REST API that provids access to machine learning models;
+* [flaat](https://github.com/indigo-dc/flaat) : FLAsk support for handling oidc Access Tokens;
+* [oidc-agent](https://github.com/indigo-dc/oidc-agent) : a set of tools to manage OpenID Connect tokens and make them easily usable from the command line;
+
+Python related packages:
+* python
+* python-dev
+* pip
+
+And a number of external tools to facilitate the development:
+* git
+* curl
+* [mc](https://midnight-commander.org/) : Midnight Commander, a visual file manager
+* openssh-client
+* [rclone](https://rclone.org) : a command line program to sync files and directories to and from cloud storages
+* wget
 
 ## Acknowledgements
 
