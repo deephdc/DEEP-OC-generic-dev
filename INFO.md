@@ -11,6 +11,7 @@
 * [Introduction](#Introduction)
 * [Configure git for commits](#Configure-git-for-commits)
 * [Start your project with DEEP Data Science template](#Start-your-project-with-DEEP-Data-Science-template)
+* [Access remote storages](#Access-remote-storages)
 * [DEEP Documentation](#DEEP-Documentation)
 * [DEEP related services](#DEEP-related-services)
 * [List of installed tools](#List-of-installed-tools)
@@ -37,6 +38,13 @@ Create your new project using our [Data Science template](https://github.com/ind
 $ cookiecutter https://github.com/indigo-dc/cookiecutter-data-science
 ```
 
+## Access remote storages
+
+You can use 
+* [rclone](https://rclone.org) to sync with a remote cloud storage (e.g. [DEEP Nextcloud](https://nc.deep-hybrid-datacloud.eu/)), or 
+* [oneclient](https://onedata.org/docs/doc/using_onedata/oneclient.html) to access OneData distributed storage.
+
+
 ## DEEP Documentation
 
 Comprehensive documentation on DEEP tools and components can be found in:
@@ -62,7 +70,7 @@ DEEP Development Environment uses as a base a Docker Image of either
 * or Ubuntu 18.04
 
 It leverages 
-* [JupyterLab](https://jupyterlab.readthedocs.io/en/stable/index.html) web-based user interface for developing and debugging your code;
+* [JupyterLab](https://jupyterlab.readthedocs.io/en/stable/index.html) web-based user interface for developing and debugging your code (hint: use **Shift+Right click** to copy/paste);
 
 Includes: 
 * [cookiecutter](https://cookiecutter.readthedocs.io/en/latest/) template tool to start or integrate your project with DEEP solutions profiting from [DEEP Data Science template](https://github.com/indigo-dc/cookiecutter-data-science):
@@ -80,7 +88,9 @@ Python related packages:
 And a number of external tools to facilitate the development:
 * git
 * curl
+* jq : lightweight and flexible command-line JSON processor
 * [mc](https://midnight-commander.org/) : Midnight Commander, a visual file manager
+* [oneclient](https://onedata.org/docs/doc/using_onedata/oneclient.html) : a command-line based client for Onedata
 * openssh-client
 * [rclone](https://rclone.org) : a command line program to sync files and directories to and from cloud storages
 * wget
