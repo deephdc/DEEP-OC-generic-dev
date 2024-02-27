@@ -12,6 +12,7 @@ You can either mount host volume with the code into the container, or run jupyte
 
 
 The resulting Docker image has pre-installed:
+
 * Tensorflow or PyTorch or (just) Ubuntu
 * [cookiecutter](https://github.com/cookiecutter/cookiecutter)
 * git
