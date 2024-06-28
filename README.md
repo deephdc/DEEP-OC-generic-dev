@@ -1,3 +1,8 @@
+---
+# The Repository is ARCHIVED!
+### it is now maintained in https://github.com/ai4os/ai4os-dev-env
+---
+
 <div align="center">
 <img src="https://ai4eosc.eu/wp-content/uploads/sites/10/2022/09/horizontal-transparent.png" alt="logo" width="300"/>
 </div>
